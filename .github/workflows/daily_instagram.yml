@@ -1,0 +1,91 @@
+name: Daily Land-Nav Puzzle to Instagram
+
+on:
+    schedule:
+        # Runs daily at 13:00 UTC (8:00 AM EST / 9:00 AM EDT)
+        - cron: "0 13 * * *"
+    workflow_dispatch:
+        inputs:
+            date:
+                description: "Optional target date (YYYY-MM-DD); defaults to today"
+                required: false
+                default: ""
+            dry_run:
+                description: "Generate & preview without posting to Instagram"
+                type: boolean
+                required: false
+                default: false
+            init_yesterday:
+                description: "Generate yesterday's puzzle if missing (for a 2-slide carousel on Day 1)"
+                type: boolean
+                required: false
+                default: false
+
+permissions:
+    contents: write
+
+jobs:
+    daily-post:
+        runs-on: ubuntu-latest
+        env:
+            TZ: America/New_York
+            PUZZLE_EPOCH: "2026-11-19"
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.11"
+                  cache: "pip"
+
+            - name: Install dependencies
+              run: pip install -r requirements.txt
+
+            - name: Generate today's puzzle and Instagram slides
+              run: |
+                  ARGS=""
+                  if [ -n "${{ github.event.inputs.date }}" ]; then
+                    ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+                  fi
+                  if [ "${{ github.event.inputs.init_yesterday }}" = "true" ]; then
+                    ARGS="$ARGS --init-yesterday"
+                  fi
+                  python daily_post.py generate $ARGS
+
+            - name: Commit & push generated puzzle assets (hosts images publicly)
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add archive/
+                  if ! git diff --cached --quiet; then
+                    git commit -m "chore(archive): generate daily puzzle for $(date +%F)"
+                    git push
+                  fi
+
+            - name: Publish carousel to Instagram
+              env:
+                  IG_USER_ID: ${{ secrets.IG_USER_ID }}
+                  IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+                  IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+              run: |
+                  ARGS=""
+                  if [ -n "${{ github.event.inputs.date }}" ]; then
+                    ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+                  fi
+                  if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+                    ARGS="$ARGS --dry-run"
+                  fi
+                  python daily_post.py publish $ARGS
+
+            - name: Commit & push Instagram post receipt
+              if: github.event.inputs.dry_run != 'true'
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add archive/
+                  if ! git diff --cached --quiet; then
+                    git commit -m "chore(archive): record Instagram post receipt for $(date +%F)"
+                    git push
+                  fi
