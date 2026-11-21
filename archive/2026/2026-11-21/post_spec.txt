@@ -1,0 +1,17 @@
+slides: ['archive/2026/2026-11-21/ig_puzzle.jpg', 'archive/2026/2026-11-20/ig_solution.jpg']
+
+Yesterday's Answer (#2): C (Water Tower) — swipe to Slide 2 for the full plotted solution.
+
+Land Nav Puzzle #3 - Intersection (easy)
+
+The marked stations each report the bearing to a column of smoke. Which marker (A, B, or C) is the location of the fire?
+
+Bearing from each station TO the target (smoke column):
+  Lookout Rock   040°
+  Trail Junction 200°
+  Overlook       300°
+Bearings are true; map north is up.
+
+Drop your answer (A, B, or C) in the comments! Full plotted solution posts tomorrow.
+
+#landnavigation #mapandcompass #orienteering #navigation #hiking #survival #puzzle #backcountry
