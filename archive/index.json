@@ -46,5 +46,17 @@
     "puzzle_image": "archive/2026/2026-11-21/puzzle.png",
     "solution_image": "archive/2026/2026-11-21/solution.png",
     "posted": null
+  },
+  {
+    "date": "2026-11-22",
+    "number": 4,
+    "variant": "running_fix",
+    "difficulty": "easy",
+    "seed": 20260003,
+    "answer": "B",
+    "answer_text": "B",
+    "puzzle_image": "archive/2026/2026-11-22/puzzle.png",
+    "solution_image": "archive/2026/2026-11-22/solution.png",
+    "posted": null
   }
 ]

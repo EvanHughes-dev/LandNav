@@ -1,0 +1,12 @@
+Land Nav Puzzle #4 - Running Fix (easy)
+
+You walk a straight leg at a steady speed. Which marker (A, B, or C) is your position at the END of the leg?
+
+Course: 110°    Speed: 5 km/h    Time: 40 min
+Bearing to Overlook at START of leg: 150°
+Bearing to Overlook at END of leg:   250°
+Bearings are true; map north is up.
+
+Drop your answer (A, B, or C) in the comments! Full plotted solution posts tomorrow.
+
+#landnavigation #mapandcompass #orienteering #navigation #hiking #survival #puzzle #backcountry

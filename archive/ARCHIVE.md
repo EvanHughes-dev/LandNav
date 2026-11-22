@@ -1,9 +1,10 @@
 # Land Navigation Puzzle Archive
 
-Total daily puzzles archived: **4**
+Total daily puzzles archived: **5**
 
 | Date | # | Variant | Difficulty | Answer | Puzzle | Solution | Instagram |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
+| 2026-11-22 | 4 | running_fix | easy | **B** | [Puzzle](2026/2026-11-22/puzzle.png) | [Solution](2026/2026-11-22/solution.png) | Pending |
 | 2026-11-21 | 3 | intersection | easy | **B** | [Puzzle](2026/2026-11-21/puzzle.png) | [Solution](2026/2026-11-21/solution.png) | Pending |
 | 2026-11-20 | 2 | reverse_resection | easy | **C (Water Tower)** | [Puzzle](2026/2026-11-20/puzzle.png) | [Solution](2026/2026-11-20/solution.png) | Pending |
 | 2026-11-19 | 323 | intersection | easy | **B** | [Puzzle](2026/2026-11-19/puzzle.png) | [Solution](2026/2026-11-19/solution.png) | Pending |
