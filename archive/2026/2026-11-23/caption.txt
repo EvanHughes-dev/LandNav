@@ -1,0 +1,12 @@
+Land Nav Puzzle #5 - Error Budget (easy)
+
+Your position (star) is fixed. Lateral error at a feature = distance x tan(uncertainty). Measure distances with the grid (1 square = 1 km). Which feature (A, B, or C) adds the LARGEST lateral position error?
+
+Angular uncertainty of each sighting:
+  A: Old Barn       +/- 3.0°
+  B: Windmill       +/- 2.0°
+  C: Saddle         +/- 1.0°
+
+Drop your answer (A, B, or C) in the comments! Full plotted solution posts tomorrow.
+
+#landnavigation #mapandcompass #orienteering #navigation #hiking #survival #puzzle #backcountry
