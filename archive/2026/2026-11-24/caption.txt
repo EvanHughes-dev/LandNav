@@ -1,0 +1,13 @@
+Land Nav Puzzle #6 - Resection (medium)
+
+Determine your position using the bearings below. Which location marker (A, B, or C) represents where you are standing?
+
+Bearings from your position TO each landmark:
+  Lookout Rock   350°
+  Dam            060°
+  Windmill       135°
+Bearings are true; map north is up.
+
+Drop your answer (A, B, or C) in the comments! Full plotted solution posts tomorrow.
+
+#landnavigation #mapandcompass #orienteering #navigation #hiking #survival #puzzle #backcountry
