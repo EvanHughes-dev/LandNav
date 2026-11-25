@@ -1,9 +1,10 @@
 # Land Navigation Puzzle Archive
 
-Total daily puzzles archived: **7**
+Total daily puzzles archived: **8**
 
 | Date | # | Variant | Difficulty | Answer | Puzzle | Solution | Instagram |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
+| 2026-11-25 | 7 | reverse_resection | medium | **A (Old Barn)** | [Puzzle](2026/2026-11-25/puzzle.png) | [Solution](2026/2026-11-25/solution.png) | Pending |
 | 2026-11-24 | 6 | resection | medium | **B** | [Puzzle](2026/2026-11-24/puzzle.png) | [Solution](2026/2026-11-24/solution.png) | Pending |
 | 2026-11-23 | 5 | error_budget | easy | **B (Windmill)** | [Puzzle](2026/2026-11-23/puzzle.png) | [Solution](2026/2026-11-23/solution.png) | Pending |
 | 2026-11-22 | 4 | running_fix | easy | **B** | [Puzzle](2026/2026-11-22/puzzle.png) | [Solution](2026/2026-11-22/solution.png) | Pending |
