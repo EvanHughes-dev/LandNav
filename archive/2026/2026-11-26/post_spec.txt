@@ -1,0 +1,17 @@
+slides: ['archive/2026/2026-11-26/ig_puzzle.jpg', 'archive/2026/2026-11-25/ig_solution.jpg']
+
+Yesterday's Answer (#7): A (Old Barn) — swipe to Slide 2 for the full plotted solution.
+
+Land Nav Puzzle #8 - Intersection (medium)
+
+The marked stations each report the bearing to a column of smoke. Which marker (A, B, or C) is the location of the fire?
+
+Bearing from each station TO the target (smoke column):
+  Water Tower    240°
+  Overlook       060°
+  Church Spire   150°
+Bearings are true; map north is up.
+
+Drop your answer (A, B, or C) in the comments! Full plotted solution posts tomorrow.
+
+#landnavigation #mapandcompass #orienteering #navigation #hiking #survival #puzzle #backcountry

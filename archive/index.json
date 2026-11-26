@@ -94,5 +94,17 @@
     "puzzle_image": "archive/2026/2026-11-25/puzzle.png",
     "solution_image": "archive/2026/2026-11-25/solution.png",
     "posted": null
+  },
+  {
+    "date": "2026-11-26",
+    "number": 8,
+    "variant": "intersection",
+    "difficulty": "medium",
+    "seed": 20260007,
+    "answer": "A",
+    "answer_text": "A",
+    "puzzle_image": "archive/2026/2026-11-26/puzzle.png",
+    "solution_image": "archive/2026/2026-11-26/solution.png",
+    "posted": null
   }
 ]
